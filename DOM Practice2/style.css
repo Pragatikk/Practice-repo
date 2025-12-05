@@ -1,0 +1,26 @@
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 20%; */
+    justify-content: center;
+    background-color: #111;
+    
+}
+h1{
+    padding: 50px 70px;
+    background-color: cornflowerblue;
+    border-radius:10px ;
+    font-size: 50px;
+    color: #fff;
+    
+}
+button{
+    font-size: 20px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: crimson;
+    color: #fff;
+}

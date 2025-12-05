@@ -1,0 +1,179 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+     height: 100%;
+     width: 100%;
+     background-color: #111;
+     display: grid;
+     /* gap: 10px;
+     padding: 10px; */
+     grid-template-rows: 90px 300px 1fr 250px;
+     grid-template-columns: 1fr 1fr 1fr ;
+     grid-template-areas: "header header header"
+                            "section1 section1 section1"
+                            "section2 section2 section2"
+                            "footer footer footer";
+                            
+}
+header{
+     background-color: #fff;
+     grid-area: header;
+     display: flex;
+     /* align-items: center;
+     justify-content: center; */
+}
+header h1{
+     margin-left: 50px;
+    font-size: 30px;
+font-weight: 700;
+align-self: center;
+
+}
+header .menus{
+     display: flex;
+   
+    align-items: center;
+    margin-left: 30%;
+     
+    
+     
+}
+header .menu1{
+     font-size: 20px;
+     margin-right: 20px;
+} 
+header .menu2{
+     font-size: 20px;
+     margin-right: 20px;
+}
+header .menu3{
+     font-size: 20px;
+     margin-right: 20px;
+}
+header .menu4{
+     font-size: 20px;
+     margin-right: 20px;
+}
+header .buttons{
+     display: flex;
+     align-items: center;
+     margin: auto;
+     margin-right: 50px;
+     gap :7px
+}
+header .buttons #btn1{
+     font-size: 15px;
+     padding: 15px 20px ;
+     border-radius: 20px;
+     background-color: transparent;
+     color: rgb(0, 102, 255);
+     border-color: rgb(0, 102, 255);;
+
+}
+
+ header .buttons #btn2{
+     font-size: 15px;
+     padding: 15px 20px ;
+     border-radius: 20px;
+     background-color: rgb(0, 102, 255);
+     border: none;
+     color:#fff;
+}
+
+#section1{
+     background-color: #dadada;
+     width: 100%;
+     display: flex;   
+     grid-area: section1; 
+     
+}
+#section1 .content{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+#section1 h1{
+     font-size: 40px;
+     font-weight: 700;
+     align-self: center;
+     margin-left: 50px;
+     white-space: nowrap;
+}
+#section1 p{
+     font-size: 18px;
+     font-weight: 200;
+     margin-right: 0;
+     margin-left: 50px;
+     margin-top: 20px;
+     width: 80%;
+     text-align: center;
+    /* color: hwb(0 13% 87% / 0.541); */
+    
+     
+}
+#section1 .buttons{
+     display: flex;
+     gap: 10px;
+     margin-top: 20px;
+     margin-left: 50px;
+     justify-content: flex-start;
+     /* margin-bottom: 20px; */
+}
+#section1 .buttons #btn1{
+     font-size: 15px;
+     padding: 15px 20px ;
+     border-radius: 20px;
+     background-color: transparent;
+     color: rgb(0, 102, 255);
+     border-color: rgb(0, 102, 255);;
+
+}
+
+ #section1 .buttons #btn2{
+     font-size: 15px;
+     padding: 15px 20px ;
+     border-radius: 20px;
+     background-color: rgb(0, 102, 255);
+     border: none;
+     color:#fff;
+}
+
+#section2{
+     background-color: #dadada;
+     display: flex;
+     justify-content: center;
+     
+     grid-area: section2;
+}
+#section2 img{
+     width: 80%;
+     height: 80%;
+     object-fit: cover;
+     margin:0px 30px ;
+     border-radius: 20px;
+}
+footer{
+     background-color: #fff;
+     grid-area: footer;
+     display: flex;
+     justify-content: space-around;
+align-items: center;
+}
+footer h1{
+     font-size: 60px;
+     font-weight: 700;
+}
+footer p{
+     font-size: 20px;
+     font-weight: 200;
+     color: hwb(0 25% 74% / 0.541);
+}
+
